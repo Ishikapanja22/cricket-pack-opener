@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --card-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+
+body {
+  @apply bg-gradient-to-br from-[#071030] via-[#0b2545] to-[#07122a] text-white antialiased;
+}
+
+.flip-card {
+  perspective: 1500px;
+}
+
+.flip-card-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.9s;
+}
+
+.flip-card.front-flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-card-face.back {
+  transform: rotateY(180deg);
+  position: absolute;
+  inset: 0;
+}
+
+.metallic {
+  background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: var(--card-shadow);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  animation: metallic-glow 3s ease-in-out infinite;
+}
+
+@keyframes metallic-glow {
+  0%, 100% {
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+}
+
+.card-anim {
+  will-change: transform, opacity;
+}

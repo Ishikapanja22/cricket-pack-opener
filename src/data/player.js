@@ -1,0 +1,16 @@
+export const players = [
+{ id:'p01', name:'Arjun Patel', role:'BAT', team:'Deccan Royals', rating:78, tier:'Common', stats:{ runs:350, avg:34.5, sr:112 },  },
+{ id:'p02', name:'R. Singh', role:'BOWL', team:'Coastal Warriors', rating:86, tier:'Rare', stats:{ wkts:18, avg:21.5, econ:6.1 },  },
+{ id:'p03', name:'S. Fernando', role:'AR', team:'Valley Eagles', rating:92, tier:'Epic', stats:{ runs:480, wkts:12, allrounderIndex:88 },  },
+{ id:'p04', name:'M. Chawla', role:'WK', team:'City Knights', rating:96, tier:'Legend', stats:{ catches:24, stumpings:6, runs:520 },  },
+{ id:'p05', name:'I. Khan', role:'BAT', team:'City Knights', rating:72, tier:'Common', stats:{ runs:290, avg:31.2, sr:108 }, },
+{ id:'p06', name:'T. Varma', role:'BOWL', team:'Deccan Royals', rating:75, tier:'Common', stats:{ wkts:12, avg:26.4, econ:7.4 }, },
+{ id:'p07', name:'N. Das', role:'AR', team:'Coastal Warriors', rating:81, tier:'Rare', stats:{ runs:310, wkts:9 },  },
+{ id:'p08', name:'K. Menon', role:'WK', team:'Valley Eagles', rating:69, tier:'Common', stats:{ catches:14, stumpings:3 },  },
+{ id:'p09', name:'D. Rao', role:'BAT', team:'Highland Tigers', rating:84, tier:'Rare', stats:{ runs:420, avg:36.9 },  },
+{ id:'p10', name:'P. Sen', role:'BOWL', team:'Highland Tigers', rating:89, tier:'Epic', stats:{ wkts:22, avg:19.8, econ:5.8 },  },
+{ id:'p11', name:'A. Joseph', role:'AR', team:'River Dolphins', rating:65, tier:'Common', stats:{ runs:210, wkts:6 }, },
+{ id:'p12', name:'Y. Iyer', role:'BAT', team:'River Dolphins', rating:71, tier:'Common', stats:{ runs:260 },  },
+{ id:'p13', name:'B. Roy', role:'BOWL', team:'River Dolphins', rating:77, tier:'Common', stats:{ wkts:15 },  },
+{ id:'p14', name:'H. Gupta', role:'WK', team:'Coastal Warriors', rating:83, tier:'Rare', stats:{ catches:19, stumpings:5 }, },
+{ id:'p15', name:'R. Malik', role:'AR', team:'Valley Eagles', rating:88, tier:'Rare', stats:{ runs:370, wkts:11},}]
